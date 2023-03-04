@@ -35,6 +35,13 @@ public class User {
         this.age = age;
     }
 
+    public User(User user){
+        this.setId(user.getId());
+        this.setName(user.getName());
+        this.setSurname(user.getSurname());
+        this.setAge(user.getAge());
+    }
+
     public String getName() {
         return name;
     }
