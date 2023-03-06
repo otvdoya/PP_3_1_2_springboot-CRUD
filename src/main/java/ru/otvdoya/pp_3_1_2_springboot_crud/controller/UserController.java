@@ -49,7 +49,7 @@ public class UserController {
 
     @GetMapping("/edit/{id}")
     public String updateUserPage(@PathVariable("id") int id, Model model) {
-        model.addAttribute("user", userService.getUser(id));
+        model.addAttribute("user", userService.getUserById(id));
         return "editUser";
     }
 
